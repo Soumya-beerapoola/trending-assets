@@ -1,0 +1,26 @@
+
+#bitcoin{
+   background:  linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(100px);
+}
+#solana{
+   background:  linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%);
+    backdrop-filter: blur(100px);
+}
+#ethereum{
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%);
+backdrop-filter: blur(100px);
+}
+#binance{
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+backdrop-filter: blur(100px);
+}
+#shiba{
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(228, 45, 4, 0.1) 100%);
+backdrop-filter: blur(100px);
+}
+
+@font-face {
+    font-family: tomorrow ;
+    src: url("./assets/fonts/tomorrow/Tomorrow-Regular.ttf");
+}

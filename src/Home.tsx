@@ -1,24 +1,29 @@
 import React from 'react';
+import activity from "./assets/images/activity.svg";
+import { assets } from './contants';
+import Asset from './main';
+import "./main.css";
 
 const Home = () => {
-
     return (
-    <>
-    <div className="font-fweight text-[16px]">Trending assets</div>
-    <div className='bg-box-bg bg-cover flex flex-col'>
-        <div className="font-fweight text-[16px] text-[#737BAE]">Bitcoin (BTC)</div>
-        <button className="h-40 w-242 bg-btn-black border border-black"> 
-        <div className="font-fweight text-[16px] text-btn-white">$31,812.80 </div>
-        <div className="font-fweight text-[16px] text-btn-green">+10%</div>
-        </button>
-        <div>Price</div> 
-        <button className="font-fweight text-[16px] text-btn-white border border-black">$60,000</button>
-        <div>TVL</div>
-        <button className="h-40 w-122 border border-black"> 1 2 3</button>
-        <div>Polpular pairs</div>
-    </div>
-    </>
-)
+        <>
+            <div style={{ fontFamily: "tomorrow" }} className="mx-[85px] py-[100px]">
+                <div className="font-fweight text-[16px] h-6 w-48 items-center flex justify-evenly text-white">
+                    <div> <img src={activity} alt="logo" /> </div>
+                    <div>
+                        Trending assets
+                    </div>
+                </div>
+                <div className='flex flex-row flex-wrap'>
+                    {assets.map((asset) => {
+                        return <Asset key={asset.title} {...asset}></Asset>
+
+                    })}
+                </div>
+            </div>
+
+        </>
+    )
 }
 
 
