@@ -1,26 +1,59 @@
-
-#bitcoin{
-   background:  linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
-    backdrop-filter: blur(100px);
-}
-#solana{
-   background:  linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%);
-    backdrop-filter: blur(100px);
-}
-#ethereum{
-    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%);
-backdrop-filter: blur(100px);
-}
-#binance{
+#bitcoin {
     background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
 }
-#shiba{
+
+#solana {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%);
+    backdrop-filter: blur(100px);
+}
+
+#ethereum {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%);
+    backdrop-filter: blur(100px);
+}
+
+#binance {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(100px);
+}
+
+#shiba {
     background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(228, 45, 4, 0.1) 100%);
-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
 }
 
 @font-face {
-    font-family: tomorrow ;
+    font-family: tomorrow;
     src: url("./assets/fonts/tomorrow/Tomorrow-Regular.ttf");
+}
+
+
+.left:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    background: rgb(20 23 43);
+    right: 0px;
+    z-index: 9;
+    transform: rotate(-47deg);
+    top: -5px;
+}
+
+.right:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background: rgb(20 23 43);
+    left: 5px;
+    z-index: 9;
+    transform: rotate(51deg);
+    top: -13px;
+}
+
+button{
+    border:none;
+    box-shadow: 0px -2px 0 0 #2e3247;
 }
